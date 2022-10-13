@@ -21,16 +21,10 @@ export const Products = () => {
                 <div className="col">
                     <div className='row'>
                         
-                        {/* {products.map((item) => {
-                        return <Product title={item.title} price={item.price} pic={item.pic}/>
-                })} */}
-                        <Product title={products[0].title} price={products[0].price} pic={products[0].pic}/>
-                        <Product title={products[1].title} price={products[1].price} pic={products[1].pic}/>
-                        <Product title={products[2].title} price={products[2].price} pic={products[2].pic}/>
-                        <Product title={products[3].title} price={products[3].price} pic={products[3].pic}/>
-                        <Product title={products[4].title} price={products[4].price} pic={products[4].pic}/>
-                        <Product title={products[5].title} price={products[5].price} pic={products[5].pic}/>                                                
-                    </div>  
+                        {products.map((item) => {
+                        return <Product title={item.title} price={item.price} pic={item.pic} key={item.id}/>
+                })}                                            
+                    </div>
                 </div>
             </div>
         </div>

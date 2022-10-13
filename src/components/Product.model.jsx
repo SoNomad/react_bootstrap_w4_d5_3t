@@ -14,7 +14,7 @@ export const Product = ({title, price, pic}) => {
                         <h4>{price}</h4>
                     </Card.Title>
 
-                    <Card.Text class="text-muted">
+                    <Card.Text className="text-muted">
                         <b>{title}</b> 
                     </Card.Text>
 
